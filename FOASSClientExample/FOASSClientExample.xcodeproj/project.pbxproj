@@ -111,9 +111,9 @@
 			children = (
 				455E3AA517A5440500426770 /* DKAppDelegate.h */,
 				455E3AA617A5440500426770 /* DKAppDelegate.m */,
-				455E3AAE17A5440500426770 /* MainStoryboard.storyboard */,
 				455E3AB117A5440500426770 /* DKViewController.h */,
 				455E3AB217A5440500426770 /* DKViewController.m */,
+				455E3AAE17A5440500426770 /* MainStoryboard.storyboard */,
 				455E3A9D17A5440500426770 /* Supporting Files */,
 			);
 			path = FOASSClientExample;
