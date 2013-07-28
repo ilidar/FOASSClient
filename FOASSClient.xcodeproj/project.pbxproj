@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		455E3A5817A5364E00426770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3A5717A5364E00426770 /* Foundation.framework */; };
+		455E3A5D17A5364E00426770 /* FOASSClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 455E3A5C17A5364E00426770 /* FOASSClient.h */; };
+		455E3A5F17A5364E00426770 /* FOASSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A5E17A5364E00426770 /* FOASSClient.m */; };
+		455E3A7A17A536F600426770 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A6817A536F600426770 /* AFHTTPClient.m */; };
+		455E3A7B17A536F600426770 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A6A17A536F600426770 /* AFHTTPRequestOperation.m */; };
+		455E3A7C17A536F600426770 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A6C17A536F600426770 /* AFImageRequestOperation.m */; };
+		455E3A7D17A536F600426770 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A6E17A536F600426770 /* AFJSONRequestOperation.m */; };
+		455E3A7E17A536F600426770 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A7017A536F600426770 /* AFNetworkActivityIndicatorManager.m */; };
+		455E3A7F17A536F600426770 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A7317A536F600426770 /* AFPropertyListRequestOperation.m */; };
+		455E3A8017A536F600426770 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A7517A536F600426770 /* AFURLConnectionOperation.m */; };
+		455E3A8117A536F600426770 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A7717A536F600426770 /* AFXMLRequestOperation.m */; };
+		455E3A8217A536F600426770 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3A7917A536F600426770 /* UIImageView+AFNetworking.m */; };
+		455E3A8417A5373400426770 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3A8317A5373400426770 /* SystemConfiguration.framework */; };
+		455E3A8617A5373900426770 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3A8517A5373900426770 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		455E3A5217A5364E00426770 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				455E3A5D17A5364E00426770 /* FOASSClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		455E3A5417A5364E00426770 /* libFOASSClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFOASSClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		455E3A5717A5364E00426770 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		455E3A5B17A5364E00426770 /* FOASSClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FOASSClient-Prefix.pch"; sourceTree = "<group>"; };
+		455E3A5C17A5364E00426770 /* FOASSClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOASSClient.h; sourceTree = "<group>"; };
+		455E3A5E17A5364E00426770 /* FOASSClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOASSClient.m; sourceTree = "<group>"; };
+		455E3A6717A536F600426770 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		455E3A6817A536F600426770 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		455E3A6917A536F600426770 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		455E3A6A17A536F600426770 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		455E3A6B17A536F600426770 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		455E3A6C17A536F600426770 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		455E3A6D17A536F600426770 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		455E3A6E17A536F600426770 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		455E3A6F17A536F600426770 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		455E3A7017A536F600426770 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		455E3A7117A536F600426770 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		455E3A7217A536F600426770 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		455E3A7317A536F600426770 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		455E3A7417A536F600426770 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		455E3A7517A536F600426770 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		455E3A7617A536F600426770 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		455E3A7717A536F600426770 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		455E3A7817A536F600426770 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		455E3A7917A536F600426770 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		455E3A8317A5373400426770 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		455E3A8517A5373900426770 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		455E3A5117A5364E00426770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455E3A8617A5373900426770 /* MobileCoreServices.framework in Frameworks */,
+				455E3A8417A5373400426770 /* SystemConfiguration.framework in Frameworks */,
+				455E3A5817A5364E00426770 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		455E3A4917A5364E00426770 = {
+			isa = PBXGroup;
+			children = (
+				455E3A5917A5364E00426770 /* FOASSClient */,
+				455E3A5617A5364E00426770 /* Frameworks */,
+				455E3A5517A5364E00426770 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		455E3A5517A5364E00426770 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				455E3A5417A5364E00426770 /* libFOASSClient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		455E3A5617A5364E00426770 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				455E3A8517A5373900426770 /* MobileCoreServices.framework */,
+				455E3A8317A5373400426770 /* SystemConfiguration.framework */,
+				455E3A5717A5364E00426770 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		455E3A5917A5364E00426770 /* FOASSClient */ = {
+			isa = PBXGroup;
+			children = (
+				455E3A5C17A5364E00426770 /* FOASSClient.h */,
+				455E3A5E17A5364E00426770 /* FOASSClient.m */,
+				455E3A6517A536D000426770 /* Libraries */,
+				455E3A5A17A5364E00426770 /* Supporting Files */,
+			);
+			path = FOASSClient;
+			sourceTree = "<group>";
+		};
+		455E3A5A17A5364E00426770 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				455E3A5B17A5364E00426770 /* FOASSClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		455E3A6517A536D000426770 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				455E3A6617A536F600426770 /* AFNetworking */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		455E3A6617A536F600426770 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				455E3A6717A536F600426770 /* AFHTTPClient.h */,
+				455E3A6817A536F600426770 /* AFHTTPClient.m */,
+				455E3A6917A536F600426770 /* AFHTTPRequestOperation.h */,
+				455E3A6A17A536F600426770 /* AFHTTPRequestOperation.m */,
+				455E3A6B17A536F600426770 /* AFImageRequestOperation.h */,
+				455E3A6C17A536F600426770 /* AFImageRequestOperation.m */,
+				455E3A6D17A536F600426770 /* AFJSONRequestOperation.h */,
+				455E3A6E17A536F600426770 /* AFJSONRequestOperation.m */,
+				455E3A6F17A536F600426770 /* AFNetworkActivityIndicatorManager.h */,
+				455E3A7017A536F600426770 /* AFNetworkActivityIndicatorManager.m */,
+				455E3A7117A536F600426770 /* AFNetworking.h */,
+				455E3A7217A536F600426770 /* AFPropertyListRequestOperation.h */,
+				455E3A7317A536F600426770 /* AFPropertyListRequestOperation.m */,
+				455E3A7417A536F600426770 /* AFURLConnectionOperation.h */,
+				455E3A7517A536F600426770 /* AFURLConnectionOperation.m */,
+				455E3A7617A536F600426770 /* AFXMLRequestOperation.h */,
+				455E3A7717A536F600426770 /* AFXMLRequestOperation.m */,
+				455E3A7817A536F600426770 /* UIImageView+AFNetworking.h */,
+				455E3A7917A536F600426770 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = Libraries/AFNetworking/AFNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		455E3A5317A5364E00426770 /* FOASSClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 455E3A6217A5364E00426770 /* Build configuration list for PBXNativeTarget "FOASSClient" */;
+			buildPhases = (
+				455E3A5017A5364E00426770 /* Sources */,
+				455E3A5117A5364E00426770 /* Frameworks */,
+				455E3A5217A5364E00426770 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FOASSClient;
+			productName = FOASSClient;
+			productReference = 455E3A5417A5364E00426770 /* libFOASSClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		455E3A4B17A5364E00426770 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = DKSoftware;
+			};
+			buildConfigurationList = 455E3A4E17A5364E00426770 /* Build configuration list for PBXProject "FOASSClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 455E3A4917A5364E00426770;
+			productRefGroup = 455E3A5517A5364E00426770 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				455E3A5317A5364E00426770 /* FOASSClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		455E3A5017A5364E00426770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455E3A5F17A5364E00426770 /* FOASSClient.m in Sources */,
+				455E3A7A17A536F600426770 /* AFHTTPClient.m in Sources */,
+				455E3A7B17A536F600426770 /* AFHTTPRequestOperation.m in Sources */,
+				455E3A7C17A536F600426770 /* AFImageRequestOperation.m in Sources */,
+				455E3A7D17A536F600426770 /* AFJSONRequestOperation.m in Sources */,
+				455E3A7E17A536F600426770 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				455E3A7F17A536F600426770 /* AFPropertyListRequestOperation.m in Sources */,
+				455E3A8017A536F600426770 /* AFURLConnectionOperation.m in Sources */,
+				455E3A8117A536F600426770 /* AFXMLRequestOperation.m in Sources */,
+				455E3A8217A536F600426770 /* UIImageView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		455E3A6017A5364E00426770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		455E3A6117A5364E00426770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		455E3A6317A5364E00426770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FOASSClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FOASSClient/FOASSClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		455E3A6417A5364E00426770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FOASSClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FOASSClient/FOASSClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		455E3A4E17A5364E00426770 /* Build configuration list for PBXProject "FOASSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455E3A6017A5364E00426770 /* Debug */,
+				455E3A6117A5364E00426770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		455E3A6217A5364E00426770 /* Build configuration list for PBXNativeTarget "FOASSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455E3A6317A5364E00426770 /* Debug */,
+				455E3A6417A5364E00426770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 455E3A4B17A5364E00426770 /* Project object */;
+}
