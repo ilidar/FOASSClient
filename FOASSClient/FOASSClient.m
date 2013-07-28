@@ -49,7 +49,7 @@ static NSString * const sBaseURL = @"http://www.foaas.com/";
   return self;
 }
 
-- (void)getMessageWithDoubleType:(DKFOASSMessageDoubleType)type
+- (void)getMessageWithDoubleType:(FOASSMessageDoubleType)type
                     receiverName:(NSString *)receiverName
                       senderName:(NSString *)senderName
                          success:(void (^)(FOASSMessage *))success
@@ -62,7 +62,7 @@ static NSString * const sBaseURL = @"http://www.foaas.com/";
                    failure:failure];
 }
 
-- (void)getMessageWithSingleType:(DKFOASSMessageSingleType)type
+- (void)getMessageWithSingleType:(FOASSMessageSingleType)type
                       senderName:(NSString *)senderName
                          success:(void(^)(FOASSMessage *message))success
                          failure:(void(^)(NSError *error))failure {
@@ -108,55 +108,55 @@ static NSString * const sBaseURL = @"http://www.foaas.com/";
 
 NSArray *FOASSAllSingleTypes() {
   return @[
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeThis),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeThat),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeEverything),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeEveryone),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypePink),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeLife),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeThanks),
-    FOASSStringTypeFromSingleType(DKFOASSMessageSingleTypeFlying)
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeThis),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeThat),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeEverything),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeEveryone),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypePink),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeLife),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeThanks),
+    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeFlying)
   ];
 }
 
 NSArray *FOASSAllDoubleTypes() {
   return @[
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeOff),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeYou),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeChainsaw),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeOutside),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeDonut),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeShakespeare),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeLinus),
-    FOASSStringTypeFromSingleType(DKFOASSMessageDoubleTypeKing)
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeOff),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeYou),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeChainsaw),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeOutside),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeDonut),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeShakespeare),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeLinus),
+    FOASSStringTypeFromSingleType(FOASSMessageDoubleTypeKing)
   ];
 }
 
-NSString *FOASSStringTypeFromSingleType(DKFOASSMessageSingleType type) {
+NSString *FOASSStringTypeFromSingleType(FOASSMessageSingleType type) {
   switch (type) {
-    case DKFOASSMessageSingleTypeThis:       return @"this";
-    case DKFOASSMessageSingleTypeThat:       return @"that";
-    case DKFOASSMessageSingleTypeEverything: return @"everything";
-    case DKFOASSMessageSingleTypeEveryone:   return @"everyone";
-    case DKFOASSMessageSingleTypePink:       return @"pink";
-    case DKFOASSMessageSingleTypeLife:       return @"life";
-    case DKFOASSMessageSingleTypeThanks:     return @"thanks";
-    case DKFOASSMessageSingleTypeFlying:     return @"flying";
+    case FOASSMessageSingleTypeThis:       return @"this";
+    case FOASSMessageSingleTypeThat:       return @"that";
+    case FOASSMessageSingleTypeEverything: return @"everything";
+    case FOASSMessageSingleTypeEveryone:   return @"everyone";
+    case FOASSMessageSingleTypePink:       return @"pink";
+    case FOASSMessageSingleTypeLife:       return @"life";
+    case FOASSMessageSingleTypeThanks:     return @"thanks";
+    case FOASSMessageSingleTypeFlying:     return @"flying";
   }
   
   return nil;
 }
 
-NSString *FOASSStringTypeFromDoubleType(DKFOASSMessageDoubleType type) {
+NSString *FOASSStringTypeFromDoubleType(FOASSMessageDoubleType type) {
   switch (type) {
-    case DKFOASSMessageDoubleTypeOff:         return @"off";
-    case DKFOASSMessageDoubleTypeYou:         return @"you";
-    case DKFOASSMessageDoubleTypeChainsaw:    return @"chainsaw";
-    case DKFOASSMessageDoubleTypeOutside:     return @"outside";
-    case DKFOASSMessageDoubleTypeDonut:       return @"donut";
-    case DKFOASSMessageDoubleTypeShakespeare: return @"shakespeare";
-    case DKFOASSMessageDoubleTypeLinus:       return @"linus";
-    case DKFOASSMessageDoubleTypeKing:        return @"king";
+    case FOASSMessageDoubleTypeOff:         return @"off";
+    case FOASSMessageDoubleTypeYou:         return @"you";
+    case FOASSMessageDoubleTypeChainsaw:    return @"chainsaw";
+    case FOASSMessageDoubleTypeOutside:     return @"outside";
+    case FOASSMessageDoubleTypeDonut:       return @"donut";
+    case FOASSMessageDoubleTypeShakespeare: return @"shakespeare";
+    case FOASSMessageDoubleTypeLinus:       return @"linus";
+    case FOASSMessageDoubleTypeKing:        return @"king";
   }
   
   return nil;

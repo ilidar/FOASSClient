@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [[FOASSClient sharedInstance] getMessageWithDoubleType:DKFOASSMessageDoubleTypeLinus
+  [[FOASSClient sharedInstance] getMessageWithDoubleType:FOASSMessageDoubleTypeLinus
                                             receiverName:@"K"
                                               senderName:@"D"
                                                  success:^(FOASSMessage *message) {

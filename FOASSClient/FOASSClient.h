@@ -9,26 +9,26 @@
 #import "AFHTTPClient.h"
 
 typedef enum {
-  DKFOASSMessageSingleTypeThis,
-  DKFOASSMessageSingleTypeThat,
-  DKFOASSMessageSingleTypeEverything,
-  DKFOASSMessageSingleTypeEveryone,
-  DKFOASSMessageSingleTypePink,
-  DKFOASSMessageSingleTypeLife,
-  DKFOASSMessageSingleTypeThanks,
-  DKFOASSMessageSingleTypeFlying
-} DKFOASSMessageSingleType;
+  FOASSMessageSingleTypeThis,
+  FOASSMessageSingleTypeThat,
+  FOASSMessageSingleTypeEverything,
+  FOASSMessageSingleTypeEveryone,
+  FOASSMessageSingleTypePink,
+  FOASSMessageSingleTypeLife,
+  FOASSMessageSingleTypeThanks,
+  FOASSMessageSingleTypeFlying
+} FOASSMessageSingleType;
 
 typedef enum {
-  DKFOASSMessageDoubleTypeOff,
-  DKFOASSMessageDoubleTypeYou,
-  DKFOASSMessageDoubleTypeChainsaw,
-  DKFOASSMessageDoubleTypeOutside,
-  DKFOASSMessageDoubleTypeDonut,
-  DKFOASSMessageDoubleTypeShakespeare,
-  DKFOASSMessageDoubleTypeLinus,
-  DKFOASSMessageDoubleTypeKing
-} DKFOASSMessageDoubleType;
+  FOASSMessageDoubleTypeOff,
+  FOASSMessageDoubleTypeYou,
+  FOASSMessageDoubleTypeChainsaw,
+  FOASSMessageDoubleTypeOutside,
+  FOASSMessageDoubleTypeDonut,
+  FOASSMessageDoubleTypeShakespeare,
+  FOASSMessageDoubleTypeLinus,
+  FOASSMessageDoubleTypeKing
+} FOASSMessageDoubleType;
 
 @class FOASSMessage;
 
@@ -36,13 +36,13 @@ typedef enum {
 
 + (instancetype)sharedInstance;
 
-- (void)getMessageWithDoubleType:(DKFOASSMessageDoubleType)type
+- (void)getMessageWithDoubleType:(FOASSMessageDoubleType)type
                     receiverName:(NSString *)receiverName
                       senderName:(NSString *)senderName
                          success:(void(^)(FOASSMessage *message))success
                          failure:(void(^)(NSError *error))failure;
 
-- (void)getMessageWithSingleType:(DKFOASSMessageSingleType)type
+- (void)getMessageWithSingleType:(FOASSMessageSingleType)type
                       senderName:(NSString *)senderName
                          success:(void(^)(FOASSMessage *message))success
                          failure:(void(^)(NSError *error))failure;
@@ -65,5 +65,5 @@ typedef enum {
 NSArray *FOASSAllSingleTypes();
 NSArray *FOASSAllDoubleTypes();
 
-NSString *FOASSStringTypeFromSingleType(DKFOASSMessageSingleType type);
-NSString *FOASSStringTypeFromDoubleType(DKFOASSMessageDoubleType type);
+NSString *FOASSStringTypeFromSingleType(FOASSMessageSingleType type);
+NSString *FOASSStringTypeFromDoubleType(FOASSMessageDoubleType type);
