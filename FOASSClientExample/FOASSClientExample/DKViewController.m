@@ -19,11 +19,13 @@
   
   [[FOASSClient sharedInstance] getMessageWithDoubleType:DKFOASSMessageDoubleTypeLinus
                                             receiverName:@"K"
-                                              senderName:@"D"success:^(FOASSMessage *message) {
-                                                  NSLog(@"%@ %@", message.message, message.subtitle);
-                                              } failure:^(NSError *error) {
-                                                  NSLog(@"%@", error);
-                                              }];
+                                              senderName:@"D"
+                                                 success:^(FOASSMessage *message) {
+                                                   NSLog(@"%@ %@", message.message, message.subtitle);
+                                                 }
+                                                 failure:^(NSError *error) {
+                                                   NSLog(@"%@", error);
+                                                 }];
 }
 
 @end
