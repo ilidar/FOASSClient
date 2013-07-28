@@ -17,11 +17,11 @@
 		455E3AAB17A5440500426770 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 455E3AAA17A5440500426770 /* Default@2x.png */; };
 		455E3AAD17A5440500426770 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 455E3AAC17A5440500426770 /* Default-568h@2x.png */; };
 		455E3AB017A5440500426770 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455E3AAE17A5440500426770 /* MainStoryboard.storyboard */; };
-		455E3AB317A5440500426770 /* DKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3AB217A5440500426770 /* DKViewController.m */; };
 		455E3AC517A544C700426770 /* libFOASSClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3AC117A5448E00426770 /* libFOASSClient.a */; };
 		455E3ADD17A5476B00426770 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3ADC17A5476B00426770 /* SystemConfiguration.framework */; };
 		455E3ADF17A5477000426770 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3ADE17A5477000426770 /* MobileCoreServices.framework */; };
 		455E3AE117A547D600426770 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455E3AE017A547D600426770 /* Security.framework */; };
+		455E3B0517A5509100426770 /* DKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455E3B0417A5509100426770 /* DKTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +49,12 @@
 		455E3AAA17A5440500426770 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		455E3AAC17A5440500426770 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		455E3AAF17A5440500426770 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		455E3AB117A5440500426770 /* DKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKViewController.h; sourceTree = "<group>"; };
-		455E3AB217A5440500426770 /* DKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKViewController.m; sourceTree = "<group>"; };
 		455E3AB917A5448E00426770 /* FOASSClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FOASSClient.xcodeproj; path = ../FOASSClient.xcodeproj; sourceTree = "<group>"; };
 		455E3ADC17A5476B00426770 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		455E3ADE17A5477000426770 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		455E3AE017A547D600426770 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		455E3B0317A5509100426770 /* DKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTableViewController.h; sourceTree = "<group>"; };
+		455E3B0417A5509100426770 /* DKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 			children = (
 				455E3AA517A5440500426770 /* DKAppDelegate.h */,
 				455E3AA617A5440500426770 /* DKAppDelegate.m */,
-				455E3AB117A5440500426770 /* DKViewController.h */,
-				455E3AB217A5440500426770 /* DKViewController.m */,
+				455E3B0317A5509100426770 /* DKTableViewController.h */,
+				455E3B0417A5509100426770 /* DKTableViewController.m */,
 				455E3AAE17A5440500426770 /* MainStoryboard.storyboard */,
 				455E3A9D17A5440500426770 /* Supporting Files */,
 			);
@@ -226,7 +226,7 @@
 			files = (
 				455E3AA317A5440500426770 /* main.m in Sources */,
 				455E3AA717A5440500426770 /* DKAppDelegate.m in Sources */,
-				455E3AB317A5440500426770 /* DKViewController.m in Sources */,
+				455E3B0517A5509100426770 /* DKTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

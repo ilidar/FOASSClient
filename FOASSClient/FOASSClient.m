@@ -108,27 +108,27 @@ static NSString * const sBaseURL = @"http://www.foaas.com/";
 
 NSArray *FOASSGetAllSingleTypes() {
   return @[
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeThis),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeThat),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeEverything),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeEveryone),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypePink),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeLife),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeThanks),
-    FOASSStringTypeFromSingleType(FOASSMessageSingleTypeFlying)
+    @(FOASSMessageSingleTypeThis),
+    @(FOASSMessageSingleTypeThat),
+    @(FOASSMessageSingleTypeEverything),
+    @(FOASSMessageSingleTypeEveryone),
+    @(FOASSMessageSingleTypePink),
+    @(FOASSMessageSingleTypeLife),
+    @(FOASSMessageSingleTypeThanks),
+    @(FOASSMessageSingleTypeFlying)
   ];
 }
 
 NSArray *FOASSGetAllDoubleTypes() {
   return @[
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeOff),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeYou),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeChainsaw),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeOutside),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeDonut),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeShakespeare),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeLinus),
-    FOASSStringTypeFromDoubleType(FOASSMessageDoubleTypeKing)
+    @(FOASSMessageDoubleTypeOff),
+    @(FOASSMessageDoubleTypeYou),
+    @(FOASSMessageDoubleTypeChainsaw),
+    @(FOASSMessageDoubleTypeOutside),
+    @(FOASSMessageDoubleTypeDonut),
+    @(FOASSMessageDoubleTypeShakespeare),
+    @(FOASSMessageDoubleTypeLinus),
+    @(FOASSMessageDoubleTypeKing)
   ];
 }
 
