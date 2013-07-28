@@ -49,25 +49,25 @@ static NSString * const sBaseURL = @"http://www.foaas.com/";
   return self;
 }
 
-- (void)getMessageWithSingleType:(DKFOASSMessageSingleType)type
+- (void)getMessageWithDoubleType:(DKFOASSMessageDoubleType)type
                     receiverName:(NSString *)receiverName
                       senderName:(NSString *)senderName
                          success:(void (^)(FOASSMessage *))success
                          failure:(void (^)(NSError *))failure {
   
-  [self getMessageWithType:FOASSStringTypeFromSingleType(type)
+  [self getMessageWithType:FOASSStringTypeFromDoubleType(type)
               receiverName:receiverName
                 senderName:senderName
                    success:success
                    failure:failure];
 }
 
-- (void)getMessageWithDoubleType:(DKFOASSMessageDoubleType)type
+- (void)getMessageWithSingleType:(DKFOASSMessageSingleType)type
                       senderName:(NSString *)senderName
                          success:(void(^)(FOASSMessage *message))success
                          failure:(void(^)(NSError *error))failure {
   
-  [self getMessageWithType:FOASSStringTypeFromDoubleType(type)
+  [self getMessageWithType:FOASSStringTypeFromSingleType(type)
               receiverName:nil
                 senderName:senderName
                    success:success

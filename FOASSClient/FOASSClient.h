@@ -36,13 +36,13 @@ typedef enum {
 
 + (instancetype)sharedInstance;
 
-- (void)getMessageWithSingleType:(DKFOASSMessageSingleType)type
+- (void)getMessageWithDoubleType:(DKFOASSMessageDoubleType)type
                     receiverName:(NSString *)receiverName
                       senderName:(NSString *)senderName
                          success:(void(^)(FOASSMessage *message))success
                          failure:(void(^)(NSError *error))failure;
 
-- (void)getMessageWithDoubleType:(DKFOASSMessageDoubleType)type
+- (void)getMessageWithSingleType:(DKFOASSMessageSingleType)type
                       senderName:(NSString *)senderName
                          success:(void(^)(FOASSMessage *message))success
                          failure:(void(^)(NSError *error))failure;

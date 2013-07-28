@@ -317,6 +317,7 @@
 				455E3A6417A5364E00426770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
