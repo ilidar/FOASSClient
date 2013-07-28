@@ -16,16 +16,6 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
-  [[FOASSClient sharedInstance] getMessageWithDoubleType:FOASSMessageDoubleTypeLinus
-                                            receiverName:@"K"
-                                              senderName:@"D"
-                                                 success:^(FOASSMessage *message) {
-                                                   NSLog(@"%@ %@", message.message, message.subtitle);
-                                                 }
-                                                 failure:^(NSError *error) {
-                                                   NSLog(@"%@", error);
-                                                 }];
 }
 
 @end

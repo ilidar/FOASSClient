@@ -62,8 +62,8 @@ typedef enum {
 
 @end
 
-NSArray *FOASSAllSingleTypes();
-NSArray *FOASSAllDoubleTypes();
+NSArray *FOASSGetAllSingleTypes();
+NSArray *FOASSGetAllDoubleTypes();
 
 NSString *FOASSStringTypeFromSingleType(FOASSMessageSingleType type);
 NSString *FOASSStringTypeFromDoubleType(FOASSMessageDoubleType type);
